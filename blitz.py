@@ -43,8 +43,8 @@ while(attack_num > 0 and defend_num > 0):
     num_rolls += 1
 
 if attack_num > defend_num:
-    print("Attack wins after %d rolls, with %d troop(s) remaining" % (num_rolls, attack_num))
+    print("Attacking army wins after %d rolls, with %d troop(s) remaining" % (num_rolls, attack_num))
 else:
-    print("Defend wins after %d rolls, with %d troops remaining" % (num_rolls, defend_num))
+    print("Defending army wins after %d rolls, with %d troops remaining" % (num_rolls, defend_num))
 
-print("Casualties:\nAttack: %d\nDefend: %d" % (attack_start-attack_num, defend_start-defend_num))
+print("Casualties:\nAttack: %d\nDefence: %d" % (attack_start-attack_num, defend_start-defend_num))
