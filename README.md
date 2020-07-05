@@ -4,7 +4,7 @@ Risk board game Blitz dice program that resembles the operation of the phone app
 
 ## How it works
 The program takes 2 arguments:
-1. Number of attaking troops
+1. Number of attacking troops
 2. Number of defending troops
 
 The maximum available troops will be used for each battle (i.e. up to 3 for attack, and up to 2 for defence), and the battles will continue until one side has 0 troops left.
