@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import random
 import sys
 
@@ -13,13 +15,7 @@ defend_num = defend_start
 num_rolls = 0
 
 def roll(num):
-    dice = []
-
-    for i in range(0,num):
-        dice.append(random.randint(1,6))
-        dice = sorted(dice)
-
-    return dice
+    return [random.randint(1,6) for i in range(num)]
 
 def battle(attack_roll, defend_roll, attack_num, defend_num):
 
@@ -51,4 +47,4 @@ if attack_num > defend_num:
 else:
     print("Defend wins after %d rolls, with %d troops remaining" % (num_rolls, defend_num))
 
-print("Casualties:\n Attack: %d\n Defend: %d" % (attack_start-attack_num, defend_start-defend_num))
+print("Casualties:\nAttack: %d\nDefend: %d" % (attack_start-attack_num, defend_start-defend_num))
